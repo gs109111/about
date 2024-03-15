@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon" type="image/x-icon" href="static/resources/favicon.png">
+    <title>Gureet Sidhu</title>
+</head>
+
+<body>
+    <!-- <div class="desktop"> -->
+    <audio id="startup" src="static/resources/win95.mp3" autoplay></audio>
+
+    <div class="click-handler" id="click-handler"></div>
+    <div class="icons">
+        <div class="icon app" id="introduction">
+            <img src="static/resources/users-2.png">
+            <p>Introduction</p>
+        </div>
+        <div class="icon app" id="about">
+            <img src="static/resources/about.png">
+            <p>About Me</p>
+        </div>
+        <div class="icon app" id="projects">
+            <img src="static/resources/coding.png">
+            <p>Projects</p>
+        </div>
+        <div class="icon app" id="winver">
+            <img src="static/resources/executable-0.png">
+            <p>Winver</p>
+        </div>
+    </div>
+    <div class="window" id="windowintroduction">
+        <div class="menu" id="windowHeader">
+            <p>Introduction</p>
+            <p class="s95 button" id="introductionclose">X</p>
+        </div>
+        <div class="body">
+            <!-- <img src="static/resources/face.jpg"> -->
+            <p id="content" class="bold">Welcome to the digital home of Gureet Sidhu.</p>
+            <p id="content">From a young age, I was fascinated by the endless possibilities that coding and software development presented. This passion has driven me to explore various corners of the tech world, from developing sleek, user-friendly websites to creating
+                dynamic applications that solve real-world problems. My journey has been one of constant learning, experimenting, and growing, always with the goal of delivering impactful digital solutions.</p>
+
+
+        </div>
+    </div>
+    <div class="window" id="windowabout">
+        <div class="menu" id="windowHeader">
+            <p>About Me - Internet</p>
+            <p class="s95 button" id="aboutclose">X</p>
+        </div>
+        <div class="body">
+            <iframe id="content" src="webpages/about.html" class="webpage"></iframe>
+
+
+        </div>
+    </div>
+
+    <div class="window" id="windowprojects">
+        <div class="menu" id="windowHeader">
+            <p>Projects - Internet</p>
+            <p class="s95 button" id="projectsclose">X</p>
+        </div>
+        <div class="body">
+            <iframe id="content" src="webpages/projects.html" class="webpage"></iframe>
+
+
+        </div>
+    </div>
+
+    <div class="window" id="windowwinver">
+        <div class="menu" id="windowHeader">
+            <p>Winver</p>
+            <p class="s95 button" id="winverclose">X</p>
+        </div>
+        <div class="body">
+            <p id="content"></p>
+            <p id="content" class="list bold">Special Thanks</p>
+            <ul id="content" class="list">
+                <li>https://fontsarena.com/ - Windows 95 Fonts
+                    <a href="static//resources/fonts/readme.txt"> (OFL License)
+                    </a>
+                </li>
+                <li>https://win98icons.alexmeub.com/ - Windows 98 Icons</li>
+                <li>https://en.wikipedia.org/wiki/Windows_95/</li>
+                <li>https://www.google.com/search?q=Windows+95</li>
+            </ul>
+        </div>
+    </div>
+
+
+    <div class="window" id="windowerror">
+        <div class="menu" id="headererror">
+            <p id="app_name">Error</p>
+            <p class="s95 button" id="errorclose">X</p>
+        </div>
+        <div class="body">
+            <img src="static/resources/error.png" id="erroricon">
+            <p id="errorcontent">This program has performed an illegal operation and will be shut down.</p>
+            <p>‎</p>
+            <p id="errorcontent" style="    top: 143px !important;
+            position: absolute;">If the problem persists, contact the program vender.</p>
+
+
+        </div>
+    </div>
+
+    <div class="taskbar">
+        <p class="s95 start" id="reload">Restart</p>
+        <p class="s95 inset-app taskbar-openapps" id="taskbar-app"></p>
+        <p class="s95 inset taskbar-right" id="time">10:00 PM</p>
+    </div>
+    <script src="static/script.js"></script>
+    <script src="static/resources/draggable.js"></script>
+</body>
+
+</html>
