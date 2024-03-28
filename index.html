@@ -19,6 +19,10 @@
             <img src="static/resources/users-2.png">
             <p>Introduction</p>
         </div>
+        <div class="icon app" id="mobile">
+            <img src="static/resources/modem.png">
+            <p>Mobile Alert</p>
+        </div>
         <div class="icon app" id="about">
             <img src="static/resources/about.png">
             <p>About Me</p>
@@ -39,13 +43,25 @@
         </div>
         <div class="body">
             <!-- <img src="static/resources/face.jpg"> -->
-            <p id="content" class="bold">Welcome to the digital home of Gureet Sidhu.</p>
-            <p id="content">From a young age, I was fascinated by the endless possibilities that coding and software development presented. This passion has driven me to explore various corners of the tech world, from developing sleek, user-friendly websites to creating
-                dynamic applications that solve real-world problems. My journey has been one of constant learning, experimenting, and growing, always with the goal of delivering impactful digital solutions.</p>
+            <iframe id="content" src="webpages/intro.html" scrolling="yes" class="webpage"></iframe>
+
+        </div>
+    </div>
+
+    <div class="window" id="windowmobile">
+        <div class="menu" id="windowHeader">
+            <p>Mobile Alert</p>
+            <p class="s95 button" id="mobileclose">X</p>
+        </div>
+        <div class="body">
+            <!-- <img src="static/resources/face.jpg"> -->
+            <p id="content" class="bold">Optimized For Desktop</p>
+            <p id="content">This website has been optimized for desktop. It may not look the best on mobile devices</p>
 
 
         </div>
     </div>
+
     <div class="window" id="windowabout">
         <div class="menu" id="windowHeader">
             <p>About Me - Internet</p>
@@ -113,7 +129,6 @@
         <p class="s95 inset taskbar-right" id="time">10:00 PM</p>
     </div>
     <script src="static/script.js"></script>
-    <script src="static/resources/draggable.js"></script>
 </body>
 
 </html>
