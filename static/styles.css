@@ -107,6 +107,10 @@ p {
     text-align: left !important;
 }
 
+#mobile {
+    display: none;
+}
+
 .window {
     display: none;
     background: lightgray;
@@ -114,12 +118,16 @@ p {
     height: 510px;
     justify-content: center;
     margin: 0 auto;
-    top: -320px;
+    /* top: -460px; */
     position: relative;
     border-bottom: black 2.5px solid;
     border-right: black 2.5px solid;
     z-index: 5;
     border-left: lightgray 2px solid;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 
 .window img {

@@ -22,11 +22,13 @@ document.getElementById("reload").onclick = () => {
     window.location.reload();
 }
 
+
 var event = new MouseEvent('dblclick', {
     'view': window,
     'bubbles': true,
     'cancelable': true
 });
+
 
 window.onload = () => {
     document.body.style.opacity = 0;
@@ -34,9 +36,16 @@ window.onload = () => {
     setTimeout(() => {
         document.body.style.opacity = 1;
         document.getElementById("startup").play();
+
     }, 1500);
     setTimeout(() => {
-        document.getElementById("introduction").dispatchEvent(event);
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        if (!isMobile) {
+            document.getElementById("introduction").dispatchEvent(event);
+        } else {
+            document.getElementById("mobile").dispatchEvent(event);
+            document.getElementById("taskbar-app").style.display = 'none';
+        }
     }, 2500)
 
 }
@@ -49,6 +58,7 @@ for (let i = 0; i < document.querySelectorAll('.app').length; i++) {
     let app = document.querySelectorAll('.app')[i].id;
 
     document.getElementById("click-handler").onclick = () => {
+
 
         console.log(i)
 
@@ -68,16 +78,6 @@ for (let i = 0; i < document.querySelectorAll('.app').length; i++) {
         document.querySelectorAll(".app p")[i].style.border = '1.2px dotted white';
         document.querySelectorAll(".app img")[i].style.opacity = '.65'
 
-
-        document.getElementsByClassName("theme-changer")[0].onclick = () => {
-            if (localStorage.theme == "xp") {
-                localStorage.theme = "95";
-                window.location.reload();
-            } else {
-                localStorage.theme = "xp"
-                window.location.reload();
-            }
-        }
 
 
 
