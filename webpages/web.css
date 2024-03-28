@@ -19,6 +19,11 @@ body {
     src: url("../static/resources/fonts/w95fa.woff2");
 }
 
+.bold {
+    font-weight: 800 !important;
+    font-size: 24px;
+}
+
 a {
     color: blue;
     font-size: 25px;
@@ -49,4 +54,20 @@ ul {
 
 li {
     padding: 0.5em;
+}
+
+#window {
+    background: lightgray !important;
+}
+
+.font95 {
+    font-family: 'WIN95' !important;
+}
+
+.lineheight {
+    line-height: 30px;
+}
+
+.nobold {
+    font-weight: 300 !important;
 }
